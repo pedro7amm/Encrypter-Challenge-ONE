@@ -4,34 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge-Encriptador</title>
+    <!-- Icono Website -->
+    <link rel="Website Icon" type="png" href="css/img/Logo-2.png">
+    <!-- Fontello Icons -->
+    <link rel="stylesheet" href="css/fontello-c01ceef6/fontello-c01ceef6/css/fontello.css">
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/indexStyle.css">
     <link rel="stylesheet" href="css/menuStyle.css">
     <link rel="stylesheet" href="css/footerStyle.css">
 </head>
 <body>
+    
     <header id="header">
         <!-- Encabezado de Página -->
-        <h2>Encriptador</h2>
+        <img src="css/img/Logo-2.png">
+        <h2>Encriptador - Challenge ONE</h2>
     </header>
     <main>
         <section id="EncriptadorSec">
             <!-- Sección del encriptador y desencriptador-->
-            <legend>Encriptar texto</legend>
-            <textarea  id="textBoxIn" placeholder="Ingrese el texto, ejemplo: ¡Hola Mundo!"></textarea>
-            <br>
+            <div id="botoneraModo">
+                <fieldset id="btnsModo">
+                    <legend>Seleccionar Modo</legend>
+                    <br>
+                    <button class="btnModo" id="btnModoEn">Encriptar</button>
+                    <button class="btnModo" id="btnModoDes">Desencriptar</button>
+                </fieldset>
+            </div>
+            <div id="divTextBox">
+                <textarea  id="textBoxIn" placeholder="Ingrese el texto, ejemplo: ¡Hola Mundo!"></textarea>
+            </div>
+             <!-- Sección del resultado
+             <div id="divResul">
+                <img src="css/img/fondoDivResul.png">
+            </div>-->
+        </section>
+        <br>
+        <!-- 
+        <section id="btnSec">
             <div id="botonera">
                 <button onclick="encriptar()"><span id="btnEncrip"></span>Encriptar</button>
                 <button onclick="vaciarBox()"><span id="btnVaciar"></span>Vaciar</button>
                 <button onclick="desencriptar()"><span id="btnDesEncrip"></span>Desencriptar</button>
             </div>
         </section>
-        <section id="resultadoSec">
-            <!-- Sección del resultado-->
-            <div id="divResul">
-                <img src="css/img/fondoDivResul.png">
-            </div>
-        </section>
+        -->
     </main>
     <footer id="footer">
         <div id="contInfo">
@@ -42,7 +60,7 @@
             </div>
             <div id="infoDev">
                 <p>P. Meléndez</p>
-                <p class="icon-mail-alt user-select-all"> pedrolendez7@gmail.com</p>
+                <p class="icon-mail-alt user-select-all">pedrolendez7@gmail.com</p>
                 <p>Software Developer</p>
             </div>
         </div>
@@ -51,12 +69,13 @@
         </div>
         <div id="social">
             <a href="https://www.instagram.com/pedro7.amm/?hl=es-la" class="icon-instagram" target="_blank"></a>
-            <a href="https://twitter.com/pedro7amm" class="icon-twitter" target="_blank"></a>
             <a href="https://www.youtube.com/channel/UCmTx19O9QfAcGLZUiVzhfpQ" class="icon-youtube-play" target="_blank"></a>                
             <a href="https://www.linkedin.com/in/pedro-mel%C3%A9ndez-miranda-412139238/" class="icon-linkedin-squared" target="_blank"></a>
             <a href="https://github.com/pedro7amm" class="icon-github-squared" target="_blank"></a>
+                
         </div>
     </footer>
+
     <script type="text/javascript" src="js/funcionalidad.js"></script>
     
 </body>
