@@ -1,7 +1,7 @@
 ﻿#footer {
-    background-color: blue;
-    border-top: 2px solid white;
-    color: white;
+    background-color:#F3F5FC;
+    border-top: 2px solid darkblue;
+    color: darkblue;
     width: 100%;
     clear: both;
     font-family:Raleway;
@@ -46,10 +46,11 @@
 }
 #social a{
     text-decoration: none;
-    color: black;
-    font-size: 15px;
+    color: darkblue;
+    font-size: 20px;
     transition: all 0.5s ease 0s;
+    margin-left:5px;
 }
 #social a:hover{
-    color:gold;
+    color:orangered;
 }

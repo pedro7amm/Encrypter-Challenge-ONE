@@ -1,19 +1,80 @@
+/*
+*{
+    outline: red dashed 1px;
+}*/
 html, body{
     height: 100%;
 }
 body{
-    background-color:cornflowerblue;
+    background: linear-gradient(25deg, #ffffff 40%, transparent 41%, transparent 59%, #ffffff 60%) ,linear-gradient(90deg, transparent 45%, #4f46e4 45%, #4f46e4 55%, transparent 55%, transparent 20%, #4f46e4 20%, #4f46e4 30%,transparent 30%);
+    background-size: 2em 2em;
+    background-color: #ffffff;
+    opacity: 1;  
 }
-main{
-    padding-bottom: 50px;
-    padding-top: 50px;
-    width : 80%;
-    margin: auto;
-    color: white;
+#EncriptadorSec{
+    width:65%;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+#botoneraModo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#botoneraModo fieldset {
+    text-align: center;
+    width: 100%;
+}
+
+#botoneraModo legend {
+    margin: 0 auto;
+    padding:1px ;
+    width: fit-content;
+    color:darkblue;
+    font-family:Raleway;
+    font-weight:bolder;
+    font-size: 25px;
+    background-color: white;
+}
+.btnModo{
+    align-items: center;
+    background-color: white;
+    color:darkblue;
+    font-family:Raleway;
+    font-weight:bolder;
+    font-size: 25px;
+    width: 25%;
+    border:0px;
+
+}
+.btnModo:hover{
+    cursor: pointer;
+    color:orangered;
+}
+
+#textBoxIn{
+    resize:none;
+    padding:0px;
+    margin-top: 10px;
+    width:99%;
+    height: 150px;
+    background-color: white;
+    border: 5px solid darkblue;
+    border-radius: 10px ;
+    color:darkblue;
+    font-family:Raleway;
+    font-weight:bolder;
     font-size: 25px;
 }
-#resultadoSec{
-    width: 45%;
+#textBoxIn::placeholder{
+    color:darkblue;
+    opacity: 0.5;
+    font-family:Raleway;
+    font-weight:bolder;
+    font-size: 25px;
 }
+
+
 
 
