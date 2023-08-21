@@ -1,7 +1,7 @@
-/*
+
 *{
     outline: red dashed 1px;
-}*/
+}
 html, body{
     height: 100%;
 }
@@ -11,16 +11,23 @@ body{
     background-color: #ffffff;
     opacity: 1;  
 }
+main {
+    flex: 1;
+}
+#textResulSec{
+    display:flex;
+}
 #EncriptadorSec{
     width:65%;
-    margin-left: 25px;
+    margin-left: 45px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 #botoneraModo{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 #botoneraModo fieldset {
     text-align: center;
@@ -29,6 +36,7 @@ body{
 
 #botoneraModo legend {
     margin: 0 auto;
+    width: 65%;
     padding:1px ;
     width: fit-content;
     color:darkblue;
@@ -42,7 +50,7 @@ body{
     background-color: white;
     color:darkblue;
     font-family:Raleway;
-    font-weight:bolder;
+    font-weight:normal;
     font-size: 25px;
     width: 25%;
     border:0px;
@@ -52,13 +60,15 @@ body{
     cursor: pointer;
     color:orangered;
 }
-
+#divTextBoxIn{
+    width: 65%;
+}
 #textBoxIn{
     resize:none;
     padding:0px;
     margin-top: 10px;
     width:99%;
-    height: 150px;
+    height: 427px;
     background-color: white;
     border: 5px solid darkblue;
     border-radius: 10px ;
@@ -74,7 +84,35 @@ body{
     font-weight:bolder;
     font-size: 25px;
 }
-
+#secResul{
+    width: 25%;
+    margin:auto;
+    margin-top: 50px;
+}
+#secResul legend {
+    margin: 0 auto;
+    width: 65%;
+    padding:1px ;
+    width: fit-content;
+    color:darkblue;
+    font-family:Raleway;
+    font-weight:bolder;
+    font-size: 25px;
+    background-color: white;
+}
+#divResul{
+    margin: auto;
+    margin-top: 25px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#divResul img{
+    height: 500px;
+    border: 5px solid darkblue;
+    border-radius: 10px ;
+}
 
 
 

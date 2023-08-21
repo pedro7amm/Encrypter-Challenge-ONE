@@ -22,34 +22,40 @@
         <h2>Encriptador - Challenge ONE</h2>
     </header>
     <main>
-        <section id="EncriptadorSec">
-            <!-- Sección del encriptador y desencriptador-->
-            <div id="botoneraModo">
-                <fieldset id="btnsModo">
-                    <legend>Seleccionar Modo</legend>
-                    <br>
-                    <button class="btnModo" id="btnModoEn">Encriptar</button>
-                    <button class="btnModo" id="btnModoDes">Desencriptar</button>
-                </fieldset>
+        <section id="textResulSec">
+            <div id="EncriptadorSec">
+                <!-- Sección del encriptador y desencriptador-->
+                <div id="botoneraModo">
+                    <fieldset id="btnsModo">
+                        <legend>Seleccionar Modo</legend>
+                        <br>
+                        <button class="btnModo" id="btnModoEn">Encriptar</button>
+                        <button class="btnModo" id="btnModoDes">Desencriptar</button>
+                    </fieldset>
+                </div>
+                <div id="divTextBox">
+                    <textarea  id="textBoxIn" placeholder="Ingrese el texto, ejemplo: ¡Hola Mundo!"></textarea>
+                </div>
+                 
             </div>
-            <div id="divTextBox">
-                <textarea  id="textBoxIn" placeholder="Ingrese el texto, ejemplo: ¡Hola Mundo!"></textarea>
+            <div id="secResul">
+                <!-- Sección del resultado-->
+                <legend>Resultado</legend>
+                <div id="divResul">
+                    <img src="css/img/fondoDivResul.png">
+                </div>
+    
             </div>
-             <!-- Sección del resultado
-             <div id="divResul">
-                <img src="css/img/fondoDivResul.png">
-            </div>-->
         </section>
         <br>
-        <!-- 
-        <section id="btnSec">
-            <div id="botonera">
+        <section id="btnSecTextBox">
+            <div id="divBtnTextBox">
                 <button onclick="encriptar()"><span id="btnEncrip"></span>Encriptar</button>
-                <button onclick="vaciarBox()"><span id="btnVaciar"></span>Vaciar</button>
                 <button onclick="desencriptar()"><span id="btnDesEncrip"></span>Desencriptar</button>
+                <button onclick="vaciarBox()"><span id="btnVaciar"></span>Vaciar</button>
             </div>
         </section>
-        -->
+        
     </main>
     <footer id="footer">
         <div id="contInfo">
