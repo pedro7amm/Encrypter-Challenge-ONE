@@ -7,7 +7,7 @@
     <!-- Icono Website -->
     <link rel="Website Icon" type="png" href="css/img/Logo-2.png">
     <!-- Fontello Icons -->
-    <link rel="stylesheet" href="css/fontello-c01ceef6/fontello-c01ceef6/css/fontello.css">
+    <link rel="stylesheet" href="css/fontello-eb69e735/fontello-eb69e735/css/fontello.css">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/indexStyle.css">
@@ -18,8 +18,15 @@
     
     <header id="header">
         <!-- Encabezado de Página -->
-        <img src="css/img/Logo-2.png">
-        <h2>Encriptador - Challenge ONE</h2>
+        <div id="divLogo">
+            <img src="css/img/Logo-2.png">
+            <h2>Encriptador - Challenge ONE</h2>
+        </div>
+        <nav class="menunavegacion">
+            <ul class="navLinks">
+                <li><a href="#footer">Contacto</a></li>
+            </ul>   
+        </nav>
     </header>
     <main>
         <section id="textResulSec">
@@ -29,8 +36,8 @@
                     <fieldset id="btnsModo">
                         <legend>Seleccionar Modo</legend>
                         <br>
-                        <button class="btnModo" id="btnModoEn">Encriptar</button>
-                        <button class="btnModo" id="btnModoDes">Desencriptar</button>
+                        <button class="btnModo selected" id="btnModoEn" onclick="hidingBtn('btnDesEncrip','btnEncrip','btnModoEn','btnModoDes')">Encriptar</button>
+                        <button class="btnModo" id="btnModoDes" onclick="hidingBtn('btnEncrip','btnDesEncrip','btnModoDes','btnModoEn')">Desencriptar</button>
                     </fieldset>
                 </div>
                 <div id="divTextBox">
@@ -41,18 +48,25 @@
             <div id="secResul">
                 <!-- Sección del resultado-->
                 <legend>Resultado</legend>
-                <div id="divResul">
-                    <img src="css/img/fondoDivResul.png">
+                <div id="divResul" class="fondoImagen">
                 </div>
-    
+            </div>
+            <br>
+        </section>
+        <section id="secRules">
+            <div id="divRules">
+                <!-- Seccion con las reglas-->
+                <p class="icon-attention-circled">No usar caractéres especiales ni letras en mayusculas</p>
             </div>
         </section>
-        <br>
         <section id="btnSecTextBox">
             <div id="divBtnTextBox">
-                <button onclick="encriptar()"><span id="btnEncrip"></span>Encriptar</button>
-                <button onclick="desencriptar()"><span id="btnDesEncrip"></span>Desencriptar</button>
-                <button onclick="vaciarBox()"><span id="btnVaciar"></span>Vaciar</button>
+                <button onclick="encriptar()" class="btnFunc" id="btnEncrip">Encriptar</button>
+                <button onclick="desencriptar()" class="btnFunc hidden" id="btnDesEncrip">Desencriptar</button>
+                <button onclick="vaciarBox()"class="btnFunc" id="btnVaciar">Vaciar</button>
+            </div>
+            <div id="divBtnResul">
+                <button onclick="copy()"class="btnFunc" id="btnCopiar">Copiar</button>
             </div>
         </section>
         

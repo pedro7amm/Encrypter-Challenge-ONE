@@ -19,21 +19,9 @@
       "src": "brandico"
     },
     {
-      "uid": "bc50457410acf467b8b5721240768742",
-      "css": "facebook",
-      "code": 62220,
-      "src": "entypo"
-    },
-    {
       "uid": "47a1f80457068fbeab69fdb83d7d0817",
       "css": "youtube-play",
       "code": 61802,
-      "src": "fontawesome"
-    },
-    {
-      "uid": "4c1ef492f1d2c39a2250ae457cee2a6e",
-      "css": "instagram-1",
-      "code": 61805,
       "src": "fontawesome"
     },
     {
@@ -59,6 +47,12 @@
       "css": "moon-inv",
       "code": 59393,
       "src": "iconic"
+    },
+    {
+      "uid": "b035c28eba2b35c6ffe92aee8b0df507",
+      "css": "attention-circled",
+      "code": 59395,
+      "src": "fontawesome"
     }
   ]
 }

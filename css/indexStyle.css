@@ -1,7 +1,7 @@
-
+/*
 *{
     outline: red dashed 1px;
-}
+}*/
 html, body{
     height: 100%;
 }
@@ -21,7 +21,7 @@ main {
     width:65%;
     margin-left: 45px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 #botoneraModo{
     display: flex;
@@ -34,10 +34,9 @@ main {
     width: 100%;
 }
 
-#botoneraModo legend {
+#botoneraModo legend{
     margin: 0 auto;
-    width: 65%;
-    padding:1px ;
+    padding:0px 10px 2px 10px ;
     width: fit-content;
     color:darkblue;
     font-family:Raleway;
@@ -46,7 +45,6 @@ main {
     background-color: white;
 }
 .btnModo{
-    align-items: center;
     background-color: white;
     color:darkblue;
     font-family:Raleway;
@@ -60,6 +58,12 @@ main {
     cursor: pointer;
     color:orangered;
 }
+.selected{
+    background-color: white;
+    color:orangered;
+    font-weight:bolder;
+}
+
 #divTextBoxIn{
     width: 65%;
 }
@@ -68,7 +72,7 @@ main {
     padding:0px;
     margin-top: 10px;
     width:99%;
-    height: 427px;
+    height: 339px;
     background-color: white;
     border: 5px solid darkblue;
     border-radius: 10px ;
@@ -88,11 +92,12 @@ main {
     width: 25%;
     margin:auto;
     margin-top: 50px;
+    margin-bottom: 15px;
 }
 #secResul legend {
     margin: 0 auto;
     width: 65%;
-    padding:1px ;
+    padding:0px 10px 2px 10px ;
     width: fit-content;
     color:darkblue;
     font-family:Raleway;
@@ -102,17 +107,85 @@ main {
 }
 #divResul{
     margin: auto;
-    margin-top: 25px;
-    width: 300px;
+    margin-top: 22px;
+    width: 80%;
+    height: 400px;
+    border: 5px solid darkblue;
+    border-radius: 10px ;
+    color:darkblue;
+    font-family:Raleway;
+    font-weight:bolder;
+    font-size: 25px;
+}
+.fondoImagen{
+    background-image: url('img/fondoDivResul.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -100px;
+}
+.fondoColor{
+    background-color: white;
+}
+#secRules{
+    width:100%;
+    margin-bottom: 20px;
+}
+#divRules{
+    width: 65%;
+    margin-left: 45px;
+    color:orangered;
+    font-family:Raleway;
+    font-weight:bold;
+    font-size: 20px;
+}
+#btnSecTextBox{
+    width:100%;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#divResul img{
-    height: 500px;
-    border: 5px solid darkblue;
-    border-radius: 10px ;
+#divBtnTextBox{
+    width: 65%;
+    margin-left: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+#divBtnResul{
+    width: 25%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnFunc{
+    background-color: blue;
+    color:white;
+    font-family:Raleway;
+    font-weight:normal;
+    font-size: 25px;
+    width: 220px;
+    height: 50px;
+    border:0px;
+    border-radius: 15px;
+}
+#divBtnTextBox{
+    gap: 30px;
+}
+#btnCopiar{
+    width:50% ;
+}
+.btnFunc:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+
+
+
 
 
 
