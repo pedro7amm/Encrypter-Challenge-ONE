@@ -28,7 +28,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 #botoneraModo fieldset {
     text-align: center;
@@ -71,7 +71,6 @@ main {
 #textBoxIn{
     resize:none;
     padding:0px;
-    margin-top: 10px;
     width:99%;
     height: 339px;
     background-color: white;
@@ -185,7 +184,6 @@ main {
 }
 .hidden{
     display: none;
-    transform: scale(0);
 }
 #divNotis{
     width: 25%;
@@ -206,17 +204,44 @@ main {
     
 }
 @media screen and (max-width:1000px) {
-    *{
-        outline: red dashed 1px;
-    }
-    html, body{
-        height: 100%;
-    }
-    main {
-        flex: 1;
-    }
     #textResulSec{
+        width: 100%;
         display:inline-block;
+    }
+    #EncriptadorDiv{
+        width:90%;
+        margin:auto;
+        margin-top: 30px;
+    }
+    .btnModo{
+        font-size: 20px;
+    }
+    
+    #divTextBoxIn{
+        width: 100%;
+    }
+    #textBoxIn{
+        height: 250px;
+    }
+    #divRules{
+        background-color: white;
+    }
+    #secResul{
+        width: 90%;
+        margin-top: 40px;
+    }
+    #divResul{
+        margin-top: 20px;
+        width: 900;
+        height: 300px;
+    }
+    .fondoImagen{
+        background-image: url('img/fondoDivResulResponsive.png');
+        background-position-y: 0px;
+        background-position-x: -55px;
+    }
+    #btnCopiar{
+        width:40% ;
     }
     
 }
