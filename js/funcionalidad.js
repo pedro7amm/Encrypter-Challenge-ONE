@@ -32,18 +32,26 @@ function desencriptar() {
     let  textoIn = document.getElementById("textBoxIn").value; //guarda en una variable el texto que ingresó el usuario mediante el ID
     let resultBox = document.getElementById("divResul");
     let resultado="";
+    resultBox.classList.remove("errorTexto");
     resultBox.classList.add("fondoColor");
     resultBox.classList.remove("fondoImagen");
-    const reemplazos = {
-        'ai': 'a',
-        'enter': 'e',
-        'imes': 'i',
-        'ober': 'o',
-        'ufat': 'u'
-    };
-    const reemplazoReguExpre = new RegExp(Object.keys(reemplazos).join('|'), 'g');
-    resultado=textoIn.replace(reemplazoReguExpre, match => reemplazos[match]);
-    resultBox.textContent =resultado;
+    if(verificarTexto(textoIn) == true){
+        const reemplazos = {
+            'ai': 'a',
+            'enter': 'e',
+            'imes': 'i',
+            'ober': 'o',
+            'ufat': 'u'
+        };
+        const reemplazoReguExpre = new RegExp(Object.keys(reemplazos).join('|'), 'g');
+        resultado=textoIn.replace(reemplazoReguExpre, match => reemplazos[match]);
+        resultBox.classList.add("correctoTexto");
+        resultBox.textContent =resultado;
+        
+    }else{
+        resultBox.classList.add("errorTexto");
+        resultBox.textContent = "¡Ingresó un caracter no válido!";
+    }
 }
 
 function vaciarBox(){
@@ -105,7 +113,7 @@ function mostrarNoti(msg){
 
 function verificarTexto(textoPara){
     const text = textoPara;
-    const regex = /^[a-z0-9]+$/;
+    const regex = /^[a-z0-9\s]+$/;
     var validacion=true;
 
     if (!regex.test(text)) {
