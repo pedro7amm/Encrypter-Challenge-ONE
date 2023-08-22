@@ -1,5 +1,5 @@
 /*
-*{
+*{ box-sizing
     outline: red dashed 1px;
 }*/
 html, body{
@@ -236,9 +236,8 @@ main {
         height: 300px;
     }
     .fondoImagen{
-        background-image: url('img/fondoDivResulResponsive.png');
-        background-position-y: 0px;
-        background-position-x: -55px;
+        background-image:none;
+        background-color: whitesmoke;
     }
     #btnCopiar{
         width:40% ;
