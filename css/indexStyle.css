@@ -205,12 +205,6 @@ main {
     right: 10px;
     
 }
-#divNotis.active{
-    top:5px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    transform:scale3d(1.1)
-}
-
 @media screen and (max-width:1000px) {
     *{
         outline: red dashed 1px;
