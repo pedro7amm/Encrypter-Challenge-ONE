@@ -67,7 +67,11 @@ function vaciarBox(){
 function copiarPortaPapeles(){
     let textToCopy = document.getElementById("divResul").textContent;
     document.getElementById("btnPegar").classList.remove("hidden");
-    navigator.clipboard
+    if(textToCopy=="¡Ingresó un caracter no válido!"){
+        mostrarNoti("Error al copiar el texto");
+
+    }else{
+        navigator.clipboard
         .writeText(textToCopy)
         .then(() => {
             mostrarNoti("Texto copiado al portapapeles");
@@ -76,6 +80,7 @@ function copiarPortaPapeles(){
             console.error("Error al copiar el texto: ", error);
             mostrarNoti("Error al copiar el texto");
         });
+    }
 }
 
 //Función que muestra y oculta el boton que el usuario desea usar
@@ -109,7 +114,7 @@ function mostrarNoti(msg){
 
     setTimeout(function() {
       notificacion.classList.add('hidden');
-    }, 1500);
+    }, 2000);
 }
 
 function verificarTexto(textoPara){
