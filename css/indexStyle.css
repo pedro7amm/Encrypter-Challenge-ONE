@@ -36,7 +36,7 @@ main {
 }
 
 #botoneraModo legend{
-    margin: 0 auto;
+    margin: auto;
     padding:0px 10px 2px 10px ;
     width: fit-content;
     color:darkblue;
@@ -215,6 +215,7 @@ main {
     }
     .btnModo{
         font-size: 20px;
+        width: 45%;
     }
     
     #divTextBoxIn{
@@ -225,6 +226,7 @@ main {
     }
     #divRules{
         background-color: white;
+        font-size: 17px;
     }
     #secResul{
         width: 90%;

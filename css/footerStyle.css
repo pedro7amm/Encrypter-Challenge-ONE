@@ -53,3 +53,18 @@
 #social a:hover{
     color:orangered;
 }
+
+@media screen and (max-width:1000px) {
+    #footer p{
+        font-size: 10px;
+    }
+    #contInfo{
+        width: 90%;
+        padding: 0px;
+        padding-top: 10px;
+    }
+    #social a{
+        font-size: 15px;
+    }
+   
+}
