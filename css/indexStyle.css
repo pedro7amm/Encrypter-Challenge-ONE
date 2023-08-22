@@ -16,8 +16,9 @@ main {
 }
 #textResulSec{
     display:flex;
+    margin-bottom: 25px;
 }
-#EncriptadorSec{
+#EncriptadorDiv{
     width:65%;
     margin-left: 45px;
     margin-top: 50px;
@@ -88,6 +89,21 @@ main {
     font-weight:bolder;
     font-size: 25px;
 }
+#divRules{
+    width: 100%;
+    margin:15px 0px 15px 0px;
+    color:orangered;
+    font-family:Raleway;
+    font-weight:bold;
+    font-size: 20px;
+}
+#divBtnTextBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
 #secResul{
     width: 25%;
     margin:auto;
@@ -135,57 +151,22 @@ main {
 }
 .fondoColor{
     background-color: white;
-    white-space: normal; /* Controlar el flujo del texto */
+    white-space: normal; 
     /*overflow: hidden; /* Ocultar el contenido que excede */
     overflow: scroll;
     display: -webkit-box;
     -webkit-box-orient: vertical;
 }
-#secRulesNotis{
-    width:100%;
-    margin-bottom: 20px;
-    display: flex;
-}
-#divRules{
-    width: 65%;
-    margin-left: 45px;
-    color:orangered;
-    font-family:Raleway;
-    font-weight:bold;
-    font-size: 20px;
-}
-#divNotis{
-    margin: auto;
-    width: 20%;
-    color:white;
-    font-family:Raleway;
-    font-weight:bold;
-    font-size: 15px;
-    background-color:orangered;
-    border-radius: 5px;
-    transition: transform 0.5s, opacity 0.5s;
-    text-align: center;
-}
-#btnSecTextBox{
-    width:100%;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#divBtnTextBox{
-    width: 65%;
-    margin-left: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 #divBtnResul{
-    width: 25%;
+    width: 100%;
     margin:auto;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#btnCopiar{
+    width:50% ;
 }
 .btnFunc{
     background-color: blue;
@@ -193,16 +174,10 @@ main {
     font-family:Raleway;
     font-weight:normal;
     font-size: 25px;
-    width: 220px;
+    width: 200px;
     height: 50px;
     border:0px;
     border-radius: 15px;
-}
-#divBtnTextBox{
-    gap: 30px;
-}
-#btnCopiar{
-    width:50% ;
 }
 .btnFunc:hover{
     background-color: orangered;
@@ -212,8 +187,45 @@ main {
     display: none;
     transform: scale(0);
 }
+#divNotis{
+    width: 25%;
+    padding:20px;
+    color:white;
+    font-family:Raleway;
+    font-weight:bold;
+    font-size: 15px;
+    background-color:orangered;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    
+}
+#divNotis.active{
+    top:5px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform:scale3d(1.1)
+}
 
-
+@media screen and (max-width:1000px) {
+    *{
+        outline: red dashed 1px;
+    }
+    html, body{
+        height: 100%;
+    }
+    main {
+        flex: 1;
+    }
+    #textResulSec{
+        display:inline-block;
+    }
+    
+}
 
 
 

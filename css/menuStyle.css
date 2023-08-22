@@ -51,12 +51,6 @@ html{
 }
 
 
-
-/*
-
 @media screen and (max-width:480px) {
-    .navLinks li{
-        padding: 0;
-        margin-left: 0;
-    }
+    
 }

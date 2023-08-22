@@ -106,6 +106,7 @@ function mostrarNoti(msg){
     let notificacion = document.getElementById("divNotis");
     notificacion.textContent=msg;
     notificacion.classList.remove('hidden');
+
     setTimeout(function() {
       notificacion.classList.add('hidden');
     }, 1500);
