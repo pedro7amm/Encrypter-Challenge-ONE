@@ -29,8 +29,8 @@
         </nav>
     </header>
     <main>
-        <section id="textResulSec">
-            <div id="EncriptadorSec">
+        <section id="textResulSec"> 
+            <div id="EncriptadorDiv">
                 <!-- Sección del encriptador y desencriptador-->
                 <div id="botoneraModo">
                     <fieldset id="btnsModo">
@@ -43,36 +43,32 @@
                 <div id="divTextBox">
                     <textarea  id="textBoxIn" placeholder="Ingrese el texto, ejemplo: ¡Hola Mundo!"></textarea>
                 </div>
-                 
+                <div id="divRules"> 
+                    <!--las reglas-->
+                    <p class="icon-attention-circled">No usar caractéres especiales ni letras en mayusculas</p>
+                </div>
+                <div id="divBtnTextBox">
+                    <button onclick="encriptar()" class="btnFunc" id="btnEncrip">Encriptar</button>
+                    <button onclick="desencriptar()" class="btnFunc hidden" id="btnDesEncrip">Desencriptar</button>
+                    <button onclick="vaciarBox()"class="btnFunc" id="btnVaciar">Vaciar</button>
+                    <button onclick="pegarDelPortaPapeles()"class="btnFunc hidden" id="btnPegar">Pegar</button>
+                </div>
             </div>
             <div id="secResul">
                 <!-- Sección del resultado-->
                 <legend>Resultado</legend>
                 <div id="divResul" class="fondoImagen">
                 </div>
+                <div id="divBtnResul">
+                    <button onclick="copiarPortaPapeles()"class="btnFunc" id="btnCopiar">Copiar</button>
+                </div>
             </div>
             <br>
         </section>
-        <section id="secRulesNotis">
-            <div id="divRules">
-                <!-- Seccion con las reglas-->
-                <p class="icon-attention-circled">No usar caractéres especiales ni letras en mayusculas</p>
-            </div>
+        <section id="secNotis">
             <div id="divNotis" class="hidden">
             </div>
         </section>
-        <section id="btnSecTextBox">
-            <div id="divBtnTextBox">
-                <button onclick="encriptar()" class="btnFunc" id="btnEncrip">Encriptar</button>
-                <button onclick="desencriptar()" class="btnFunc hidden" id="btnDesEncrip">Desencriptar</button>
-                <button onclick="vaciarBox()"class="btnFunc" id="btnVaciar">Vaciar</button>
-                <button onclick="pegarDelPortaPapeles()"class="btnFunc hidden" id="btnPegar">Pegar</button>
-            </div>
-            <div id="divBtnResul">
-                <button onclick="copiarPortaPapeles()"class="btnFunc" id="btnCopiar">Copiar</button>
-            </div>
-        </section>
-        
     </main>
     <footer id="footer">
         <div id="contInfo">
