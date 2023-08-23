@@ -164,19 +164,20 @@ main {
     justify-content: center;
     align-items: center;
 }
-#btnCopiar{
-    width:50% ;
-}
+
 .btnFunc{
     background-color: blue;
     color:white;
     font-family:Raleway;
-    font-weight:normal;
+    font-weight:bold;
     font-size: 25px;
     width: 200px;
     height: 50px;
     border:0px;
     border-radius: 15px;
+}
+#btnCopiar{
+    width:50% ;
 }
 .btnFunc:hover{
     background-color: orangered;
@@ -201,7 +202,6 @@ main {
     position: fixed;
     top: 10px;
     right: 10px;
-    
 }
 @media screen and (max-width:1000px) {
     #textResulSec{
@@ -217,7 +217,6 @@ main {
         font-size: 20px;
         width: 45%;
     }
-    
     #divTextBoxIn{
         width: 100%;
     }
@@ -241,9 +240,19 @@ main {
         background-image:none;
         background-color: whitesmoke;
     }
-    #btnCopiar{
-        width:40% ;
+    .btnFunc{
+        font-size: 15px;
+        width: 30%;
+        height: 35px;
     }
+    #btnCopiar{
+        width:30% ;
+    }
+    #divBtnTextBox{
+        gap:10px;
+    }
+
+    
     
 }
 
